@@ -1,0 +1,530 @@
+<!doctype html>
+<div class="loader-container">
+    <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico" />
+    <style>
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #14395B;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            z-index: 3000;
+        }
+
+        .loader,
+        .loader:before,
+        .loader:after {
+            border-radius: 50%;
+        }
+        .loader {
+            color: #ffffff;
+            font-size: 11px;
+            text-indent: -99999em;
+            margin: 55px auto;
+            position: relative;
+            width: 10em;
+            height: 10em;
+            box-shadow: inset 0 0 0 1em;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        .loader:before,
+        .loader:after {
+            position: absolute;
+            content: '';
+        }
+        .loader:before {
+            width: 5.2em;
+            height: 10.2em;
+            background: #14395B;
+            border-radius: 10.2em 0 0 10.2em;
+            top: -0.1em;
+            left: -0.1em;
+            -webkit-transform-origin: 5.1em 5.1em;
+            transform-origin: 5.1em 5.1em;
+            -webkit-animation: load2 2s infinite ease 1.5s;
+            animation: load2 2s infinite ease 1.5s;
+        }
+        .loader:after {
+            width: 5.2em;
+            height: 10.2em;
+            background: #14395B;
+            border-radius: 0 10.2em 10.2em 0;
+            top: -0.1em;
+            left: 4.9em;
+            -webkit-transform-origin: 0.1em 5.1em;
+            transform-origin: 0.1em 5.1em;
+            -webkit-animation: load2 2s infinite ease;
+            animation: load2 2s infinite ease;
+        }
+        @-webkit-keyframes load2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes load2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="container-fluid wow animate__bounceInDown ani-1" id="nav">
+    <div class="row" >
+        <div class="container ">
+            <div class="row" >
+                <div class="col-12 header">
+                    <header class=" d-flex justify-content-between align-items-center">
+                        <div class="domrey-logo" >
+                            <img src="img/logo.svg" alt="" class="logo">
+                        </div>
+                        <div class="domrey-bars" id="domrey-bars">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                            <div class="line-3"></div>
+                        </div>
+                        <ul id="domrey-menu" class="domrey-menu">
+                            <li ><a id="link-home" class="active"  href="#home">Home</a></li>
+                            <li ><a id="link-arrival"   href="#apartment">Apartments</a></li>
+                            <li ><a id="link-edition"  href="#featured">Featured</a></li>
+                            <li ><a id="link-subscribe"  href="#all">All</a></li>
+                            <li ><a id="link-blog"  href="#lists">Lists</a></li>
+                            <li ><a id="link-contact"  href="#contact">Contact</a></li>
+                            <li ><button class="btn btn-primary" style="padding: 5px 25px; border-radius: 30px;">Login</button></li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="home" class="container-fluid cover" style="background-image: url('img/cover.svg')">
+    <div class="row ">
+        <div class="container">
+            <div class="row vh-100">
+                <div class="col-12 d-flex justify-content-start align-items-center">
+                    <div class="" >
+                        <h1 class="text-white font-weight-bolder wow animate__fadeInUp ani-1" style="font-size: 4rem;">Let's Find <br> <span style="font-size: 4rem;">Your Dreams...</span></h1>
+                        <p class="text-white-50 wow animate__fadeInUp ani-2">Building award winning properties across London  UK and the All world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="apartment" class="container-fluid">
+    <div class="row py-5" style="background-color: #F4F7FA;">
+        <div class="container">
+            <div class="d-flex flex-column justify-content-center align-items-center mt-5 ">
+                <h4 class="font-weight-bolder" style="color: #14395B;">HI, What do you want to your</h4>
+                <h4 class="font-weight-bolder" style="color: #186AA5;">Dream Apartment </h4>
+                <p class="mt-3 text-black-50">Select a Apartment type below to begins</p>
+            </div>
+            <div class="row mt-5 mb-5 mb-md-0 d-flex justify-content-center">
+                <div class="col-md-3 col-6 wow animate__fadeInUp ani-1">
+                    <div class="card-apart">
+                        <label for="selected-item-1" class="selected-label">
+                            <input type="radio" name="selected-item" id="selected-item-1">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <img src="img/apart1.svg" alt="" class="apart-img">
+                                <p class="text-black-50 my-2 ">Portion</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 wow animate__fadeInUp ani-2">
+                    <div class="card-apart">
+                        <label for="selected-item-2" class="selected-label">
+                            <input type="radio" name="selected-item" id="selected-item-2">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <img src="img/apart2.svg" alt="" class="apart-img">
+                                <p class="text-black-50 my-2 ">Height</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 wow animate__fadeInUp ani-1">
+                    <div class="card-apart mt-3 mt-md-0">
+                        <label for="selected-item-3" class="selected-label">
+                            <input type="radio" name="selected-item" id="selected-item-3">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <img src="img/apart3.svg" alt="" class="apart-img">
+                                <p class="text-black-50 my-2 ">Penthouse</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 wow animate__fadeInUp ani-2">
+                    <div class="card-apart mt-3 mt-md-0">
+                        <label for="selected-item-4" class="selected-label">
+                            <input type="radio" name="selected-item" id="selected-item-4">
+                            <span class="icon"></span>
+                            <div class="selected-content">
+                                <img src="img/apart4.svg" alt="" class="apart-img">
+                                <p class="text-black-50 my-2 ">The Studio</p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="row w-100  mt-5 wow animate__fadeInUp ani-2">
+                    <div class="col-12">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button class="btn btn-primary con-btn">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="featured" class="container-fluid">
+    <div class="row mb-5">
+        <div class="container">
+            <div class="row   mt-5">
+                <div class=" d-flex justify-content-center  text-center " style="width: 100%;">
+                    <div class="">
+                        <h4 class=" mt-5 font-weight-bolder " style="color: #14395B;">Featured Apartment </h4>
+                        <p class="text-black-50 mt-2 wow ">The Most frequently searched and most popular apartment of the application will be in the list</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mt-md-4 wow animate__fadeInUp ani-1">
+                    <div class="card f-card" >
+                        <img src="img/f1.svg" alt="" class="f-img">
+                        <div class="away-po">
+                            <p class="away-txt font-weight-bold">1.2k away</p>
+                        </div>
+                        <div class="for-po">
+                            <p class="for-txt font-weight-bold">For rent</p>
+                        </div>
+                        <div class="p-po">
+                            <img src="img/p1.png" alt="" class="w-10">
+                        </div>
+                        <div class="card-body mt-2" style="padding: unset !important;">
+                            <p class="text-black-50 m-0"><span class="fa feather-map-pin mr-2" style="color: #fe7847;"></span>Knightsbridge</p>
+                        </div>
+                        <p class="font-weight-bolder m-0" style="font-size: 2rem;color: #1E62E8;">&#36; 2,500</p>
+                        <h5 class="font-weight-bolder m-0">Apartment London</h5>
+                        <p class="font-weight-light my-3">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                        <div class="d-flex align-items-center f-bottom">
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">2</p>
+                                    <img src="img/bed.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bedrooms</p>
+                            </div>
+                            <div class="mx-4">
+                                <div class="d-flex align-items-baseline ">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">2</p>
+                                    <img src="img/bath.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bathrooms</p>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">1766</p>
+                                    <img src="img/ft.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Squre Ft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4  mt-md-4 mt-4 wow animate__fadeInUp ani-2">
+                    <div class="card f-card" >
+                        <img src="img/f2.svg" alt="" class="f-img">
+                        <div class="away-po">
+                            <p class="away-txt font-weight-bold">20k away</p>
+                        </div>
+                        <div class="for-po">
+                            <p class="for-txt font-weight-bold">For rent</p>
+                        </div>
+                        <div class="p-po">
+                            <img src="img/p2.svg" alt="" class="w-10">
+                        </div>
+                        <div class="card-body mt-2" style="padding: unset !important;">
+                            <p class="text-black-50 m-0"><span class="fa feather-map-pin mr-2" style="color: #fe7847;"></span>Belmont Gardens, Chicago</p>
+                        </div>
+                        <p class="font-weight-bolder m-0" style="font-size: 2rem;color: #1E62E8;">&#36; 30,000</p>
+                        <h5 class="font-weight-bolder m-0">Apartment London</h5>
+                        <p class="font-weight-light my-3">Beautiful Huge 1 Family House In Heart Of Westbury Newly Renovated With New Furniture</p>
+                        <div class="d-flex align-items-center f-bottom">
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">3</p>
+                                    <img src="img/bed.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bedrooms</p>
+                            </div>
+                            <div class="mx-4">
+                                <div class="d-flex align-items-baseline ">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">2</p>
+                                    <img src="img/bath.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bathrooms</p>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">2500</p>
+                                    <img src="img/ft.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Squre Ft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mt-md-4 mt-4 wow animate__fadeInUp ani-1">
+                    <div class="card f-card" >
+                        <img src="img/f3.svg" alt="" class="f-img">
+                        <div class="away-po">
+                            <p class="away-txt font-weight-bold">10k away</p>
+                        </div>
+                        <div class="for-po">
+                            <p class="for-txt font-weight-bold">For rent</p>
+                        </div>
+                        <div class="p-po">
+                            <img src="img/p3.svg" alt="" class="w-10">
+                        </div>
+                        <div class="card-body mt-2" style="padding: unset !important;">
+                            <p class="text-black-50 m-0"><span class="fa feather-map-pin mr-2" style="color: #fe7847;"></span>Knightsbridge</p>
+                        </div>
+                        <p class="font-weight-bolder m-0" style="font-size: 2rem;color: #1E62E8;">&#36; 379,000</p>
+                        <h5 class="font-weight-bolder m-0">Galliard Homes Apartment</h5>
+                        <p class="font-weight-light my-3">This Fabulous Two Bedroom Duplex Apartment Will Be Close To Some Of The Best Local.</p>
+                        <div class="d-flex align-items-center f-bottom">
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">2</p>
+                                    <img src="img/bed.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bedrooms</p>
+                            </div>
+                            <div class="mx-4">
+                                <div class="d-flex align-items-baseline ">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">1</p>
+                                    <img src="img/bath.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Bathrooms</p>
+                            </div>
+                            <div class="">
+                                <div class="d-flex align-items-baseline">
+                                    <p class="m-0 mr-2 font-weight-bolder text-primary">1041</p>
+                                    <img src="img/ft.svg" alt="">
+                                </div>
+                                <p class="font-weight-light m-0">Squre Ft</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="all" class="container-fluid">
+    <div class="row " style="background-color: #F4F7FA;">
+        <div class="container">
+            <div class="row d-flex flex-column-reverse flex-md-column-reverse  flex-lg-row" style="width: 100%;">
+                <div class="col-12 col-md-12 col-lg-4 mt-0 mt-md-0 mt-lg-5 py-5 py-md-5 py-lg-0 d-flex flex-column justify-content-center dream-col-1" >
+                    <h2 class="font-weight-bolder wow animate__fadeInUp ani-1">Buy</h2>
+                    <h2 class="font-weight-bolder my-3 wow animate__fadeInUp ani-1">Dream Apartment</h2>
+                    <h2 class="font-weight-bolder wow animate__fadeInUp ani-1">In <span style="color: #2289ff;">Prime location</span></h2>
+                    <div class="mt-4">
+                        <button class="btn btn-primary con-btn wow animate__fadeInUp ani-2">See All Apartments</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-8 mt-md-5 mt-5 d-flex justify-content-center align-items-center dream-col-2 wow animate__fadeInUp ani-1" >
+                    <div class="mt-5 mt-md-5 mt-lg-0">
+                        <img src="img/dream.svg" alt="" class="dream-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lists" class="container-fluid">
+    <div class="row mb-5 mt-5 pt-5" >
+        <div class="mt-4 d-flex justify-content-center  text-center " style="width: 100%;">
+            <div class="">
+                <p class="text-primary font-weight-bolder mt-2">Apartments</p>
+                <h4 class=" mt-1 font-weight-bolder" style="color: #14395B;">Featured Listings</h4>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row ">
+                <div class="col-12  d-flex flex-column flex-md-row justify-content-center align-items-center list-card ">
+                    <div class="d-flex mr-0 mr-md-2">
+                        <div class="mr-2  d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-1">
+                            <img class="mt-3" src="img/car.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Packing Space</p>
+                        </div>
+                        <div class="ml-2  d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-2">
+                            <img class="mt-3" src="img/poll.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Swimming Poll</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-md-0 mt-2 ml-0 ml-md-2">
+                        <div class="mr-2  d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-1">
+                            <img class="mt-3" src="img/security.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Private Security</p>
+                        </div>
+                        <div class="ml-2  d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-2">
+                            <img class="mt-3" src="img/medical.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Medical Center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12  d-flex flex-column flex-md-row justify-content-center align-items-center list-card ">
+                    <div class="d-flex mr-0 mr-md-2">
+                        <div class="mr-2 d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-1">
+                            <img class="mt-3" src="img/library.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Library Area</p>
+                        </div>
+                        <div class="ml-2 d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-2">
+                            <img class="mt-3" src="img/bed-f.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">King Size Beds</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex mt-md-0 mt-2 ml-0 ml-md-2">
+                        <div class="mr-2 d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-1">
+                            <img class="mt-3" src="img/home-f.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Smart Home</p>
+                        </div>
+                        <div class="ml-2 d-flex flex-column justify-content-center align-items-center list-card-child wow animate__fadeInUp ani-2">
+                            <img class="mt-3" src="img/kid.svg" alt="" style="width: 80px;">
+                            <p class="font-weight-bold  mt-2">Kids Playland</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container-fluid" style="background-color: #14395B;">
+    <div class="row mt-5 pt-5">
+        <div class="container">
+            <div class="row mb-3 mb-md-3 mb-lg-0">
+                <div class="col-6 col-md-6 col-lg-3 my-5">
+                    <img src="img/logo.svg" alt="" style="width: 170px;">
+                    <p class=" text-white py-3"> The most beautiful exclusive properties and luxury apartments</p>
+                    <div class="">
+                        <img class="social" src="img/fb.svg" alt="" >
+                        <img class="social" src="img/twitter.svg" alt="">
+                        <img class="social" src="img/ig.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 my-5 ">
+                    <h5 class="text-uppercase text-white mb-4">Useful Links</h5>
+                    <div class="font-weight-light">
+                        <a href="#" class="text-white">About</a>
+                        <br> <br>
+                        <a href="#" class="text-white">Partners</a>
+                        <br> <br>
+                        <a href="#" class="text-white">Contact</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 my-0 my-lg-5 my-md-0 ">
+                    <h5 class="text-uppercase text-white mb-4">Help?</h5>
+                    <div class="font-weight-light">
+                        <a href="#" class="text-white">FQA</a>
+                        <br> <br>
+                        <a href="#" class="text-white">Terms and condition</a>
+                        <br> <br>
+                        <a href="#" class="text-white">Policy</a>
+                        <br> <br>
+                        <a href="#" class="text-white">Privacy</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3 my-0 my-lg-5 my-md-0">
+                    <h5 class="text-uppercase text-white mb-4">Address</h5>
+                    <div class="font-weight-light">
+                        <a href="#" class="text-white">113-115 Old Brompton Road</a>
+                        <br> <br>
+                        <a href="#" class="text-white">SW7 3LE LONDON, UNITED KINGDOM</a>
+                        <br> <br>
+                        <a href="#" class="text-white">www.mordern.com</a>
+                        <br> <br>
+                        <a href="#" class="text-white">09-97829741</a>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-md-0 my-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61222.88580941416!2d97.62416767242294!3d16.453732042851225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a8b3d95f5559%3A0x6fafc8c3a8dd3009!2z4YCZ4YCx4YCs4YC64YCc4YCZ4YC84YCt4YCv4YCE4YC6!5e0!3m2!1smy!2smm!4v1624419380398!5m2!1smy!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-3" style="background-color: #0B2F50;">
+        <div class="col-12 d-flex flex-md-row flex-column justify-content-around ">
+            <p class="text-white-50">© Copyright 2021, morden.com</p>
+            <p class="text-white-50">Terms & Condition    |   Privacy Policy</p>
+        </div>
+    </div>
+</section>
+
+<script src="vendor/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/wow/wow.js"></script>
+<script src="vendor/way_point/jquery.waypoints.min.js"></script>
+<script>
+
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animate__animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+        }
+    )
+    wow.init();
+
+    $(window).on("load",function () {
+        $('.loader-container').fadeOut(500,function () {
+            $(this).remove();
+        });
+    });
+</script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
